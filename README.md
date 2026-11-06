@@ -1,22 +1,72 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+Expense Tracker App
 
-# Run and deploy your AI Studio app
+An Android application developed with the assistance of Google AI Studio to help users manage personal finances, track income and expenses, and monitor their spending habits.
 
-This contains everything you need to run your app locally.
+About the Project
 
-View your app in AI Studio: https://ai.studio/apps/d908fb9f-defe-4541-8b01-a2aa2f45f4dc
+The Expense Tracker App is designed to make personal financial management simple and convenient. Users can record daily transactions, organize expenses into categories, monitor their total balance, and analyze their spending patterns.
 
-## Run Locally
+This application was built with the help of AI-powered development tools, including Google AI Studio.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+Features
 
+- Add, edit, and delete transactions.
+- Track income and expenses.
+- Organize transactions by category.
+- Record transaction amounts and dates.
+- Calculate total balance automatically.
+- View daily and monthly expense summaries.
+- Search and filter transactions.
+- Expense charts and analytics.
+- Monthly budget management.
+- Recurring expense tracking.
+- Export transaction records.
+- Light and dark mode.
+- Firebase cloud synchronization.
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+Technologies Used
+
+- Android Studio
+- Kotlin / Java (as applicable)
+- Firebase
+- SQLite / Cloud Firestore (as applicable)
+- Google AI Studio
+- Gemini AI
+
+AI-Assisted Development
+
+This project was developed with the assistance of Google AI Studio and Gemini AI.
+
+AI was used to assist with:
+
+- Application structure and development.
+- User interface design.
+- Code generation and implementation.
+- Feature integration.
+- Debugging and improvements.
+
+Run Locally
+
+Prerequisites:
+
+- Android Studio
+- Android SDK
+- JDK (compatible with the project)
+
+Steps
+
+1. Clone or download this repository.
+2. Open Android Studio.
+3. Select Open and choose the project directory.
+4. Allow Gradle to sync and download the required dependencies.
+5. Configure Firebase if cloud services are enabled.
+6. Configure the required API keys if Gemini AI features are implemented.
+7. Run the application on an Android emulator or physical device.
+
+Project Status
+
+Developed as a mobile application project to demonstrate Android development, database integration, personal finance management, and AI-assisted software development.
+
+Developer
+
+Ullas U Suvarna
