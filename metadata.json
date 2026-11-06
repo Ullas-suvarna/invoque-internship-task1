@@ -1,0 +1,6 @@
+{
+  "name": "Expense Tracker",
+  "description": "Personal finance manager to track income, expenses, budgets, and financial analytics with cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "collections": {
+    "users": {
+      "path": "users/{userId}",
+      "description": "User profile records",
+      "fields": {
+        "userId": "string",
+        "email": "string",
+        "displayName": "string",
+        "updatedAt": "timestamp"
+      },
+      "subcollections": {
+        "expenses": {
+          "path": "users/{userId}/expenses/{expenseId}",
+          "description": "User expenses records",
+          "fields": {
+            "transactionId": "string",
+            "userId": "string",
+            "title": "string",
+            "amount": "number",
+            "type": "string",
+            "category": "string",
+            "date": "number",
+            "description": "string",
+            "createdAt": "number",
+            "updatedAt": "number"
+          }
+        },
+        "income": {
+          "path": "users/{userId}/income/{incomeId}",
+          "description": "User income records",
+          "fields": {
+            "transactionId": "string",
+            "userId": "string",
+            "title": "string",
+            "amount": "number",
+            "type": "string",
+            "category": "string",
+            "date": "number",
+            "description": "string",
+            "createdAt": "number",
+            "updatedAt": "number"
+          }
+        },
+        "budgets": {
+          "path": "users/{userId}/budgets/{budgetId}",
+          "description": "User monthly and category budgets",
+          "fields": {
+            "budgetId": "string",
+            "userId": "string",
+            "monthYear": "string",
+            "category": "string",
+            "limitAmount": "number",
+            "updatedAt": "number"
+          }
+        },
+        "recurring_expenses": {
+          "path": "users/{userId}/recurring_expenses/{recurringId}",
+          "description": "User recurring transactions and schedules",
+          "fields": {
+            "recurringId": "string",
+            "userId": "string",
+            "title": "string",
+            "amount": "number",
+            "type": "string",
+            "category": "string",
+            "frequency": "string",
+            "startDate": "number",
+            "nextDueDate": "number",
+            "isActive": "boolean",
+            "description": "string",
+            "updatedAt": "number"
+          }
+        }
+      }
+    }
+  }
+}
